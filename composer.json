@@ -1,12 +1,12 @@
 {
-    "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
-    "keywords": ["yii2", "framework", "basic", "project template"],
+    "name": "hikmat30ce/laymeneasylife",
+    "description": "This project is based on Yii 2 Basic Project Template",
+    "keywords": ["yii2", "framework", "basic", "project template","laymeneasylife","automation"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "issues": "https://github.com/hikmat30ce/laymeneasylife/issues?state=open",
         "forum": "http://www.yiiframework.com/forum/",
         "wiki": "http://www.yiiframework.com/wiki/",
         "irc": "irc://irc.freenode.net/yii",
