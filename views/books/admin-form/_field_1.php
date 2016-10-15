@@ -1,0 +1,1 @@
+<?= $form->field($model, $field->fieldname)->textInput(['maxlength' => true]) ?>
