@@ -3,8 +3,8 @@
 namespace app\controllers;
 
 use Yii;
-use app\viewmodels\Validators;
-use app\viewmodels\SearchValidators;
+use app\coreviewmodels\Validators;
+use app\coreviewmodels\SearchValidators;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;

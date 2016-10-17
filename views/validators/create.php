@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\viewmodels\Validators */
+/* @var $model app\coreviewmodels\Validators */
 
 $this->title = Yii::t('app', 'Create Validators');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Validators'), 'url' => ['index']];

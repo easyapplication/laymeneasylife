@@ -3,12 +3,12 @@
 namespace app\controllers;
 
 use Yii;
-use app\viewmodels\Formfields;
-use app\viewmodels\SearchFormfields;
+use app\coreviewmodels\Formfields;
+use app\coreviewmodels\SearchFormfields;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-use app\viewmodels\Books;
+
 
 /**
  * FormfieldController implements the CRUD actions for Formfields model.

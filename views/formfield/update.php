@@ -3,7 +3,7 @@
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */
-/* @var $model app\viewmodels\Formfields */
+/* @var $model app\coreviewmodels\Formfields */
 
 $this->title = Yii::t('app', 'Update {modelClass}: ', [
     'modelClass' => 'Formfields',

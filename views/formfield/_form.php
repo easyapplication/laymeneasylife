@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\viewmodels\Formfields */
+/* @var $model app\coreviewmodels\Formfields */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -19,7 +19,7 @@ use yii\widgets\ActiveForm;
  
     <?=
     $form->field($model, 'fieldtype')->dropDownList([
-        \yii\helpers\ArrayHelper::map(\app\viewmodels\Validators::find()->where(['active' => 1])->all(), 'name', 'name')
+        \yii\helpers\ArrayHelper::map(\app\coreviewmodels\Validators::find()->where(['active' => 1])->all(), 'name', 'name')
     ])
     ?>
 
@@ -40,7 +40,7 @@ use yii\widgets\ActiveForm;
 
     <?=
     $form->field($model, 'model')->dropDownList([
-        \yii\helpers\ArrayHelper::map(\app\viewmodels\Models::find()->all(), 'model', 'model')
+        \yii\helpers\ArrayHelper::map(\app\coreviewmodels\Models::find()->all(), 'model', 'model')
     ])
     ?>
 

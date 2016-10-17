@@ -3,10 +3,10 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'basic',
+    'id' => 'Laymeneasylife',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'timeZone'=>'Asia/Karachi',
+    'timeZone' => 'Asia/Karachi',
     'components' => [
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
@@ -39,17 +39,37 @@ $config = [
             ],
         ],
         'db' => require(__DIR__ . '/db.php'),
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+    /*
+      'urlManager' => [
+      'enablePrettyUrl' => true,
+      'showScriptName' => false,
+      'rules' => [
+      ],
+      ],
+     */
     ],
     'params' => $params,
 ];
+$config['modules']['laymengenerator'] = [
+    'class' => 'app\modules\Generator\Module',
+    'generators' => [ //here
+        'mycrud' => [ // generator name
+            //'class' => 'yii\gii\generators\crud\Generator', // generator class
+            'class' => 'app\crudTemplates\crud\Generator', // generator class
+            'templates' => [ //setting for out templates
+                'myCrud' => '@app/crudTemplates/crud/default', // template name => path to template
+            ]
+        ],
+        'mymodel' => [ // generator name
+            //'class' => 'yii\gii\generators\crud\Generator', // generator class
+            'class' => 'app\crudTemplates\model\Generator', // generator class
+            'templates' => [ //setting for out templates
+                'myCrud' => '@app/crudTemplates/crud/default', // template name => path to template
+            ]
+        ],
+    ]
+];
+
 
 if (YII_ENV_DEV) {
     // configuration adjustments for 'dev' environment
@@ -61,6 +81,22 @@ if (YII_ENV_DEV) {
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',
+        'generators' => [ //here
+            'mycrud' => [ // generator name
+                //'class' => 'yii\gii\generators\crud\Generator', // generator class
+                'class' => 'app\crudTemplates\crud\Generator', // generator class
+                'templates' => [ //setting for out templates
+                    'myCrud' => '@app/crudTemplates/crud/default', // template name => path to template
+                ]
+            ],
+            'mymodel' => [ // generator name
+                //'class' => 'yii\gii\generators\crud\Generator', // generator class
+                'class' => 'app\crudTemplates\model\Generator', // generator class
+                'templates' => [ //setting for out templates
+                    'myCrud' => '@app/crudTemplates/crud/default', // template name => path to template
+                ]
+            ],
+        ]
     ];
 }
 

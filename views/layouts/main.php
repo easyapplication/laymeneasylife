@@ -39,7 +39,7 @@ AppAsset::register($this);
             ['label' => 'Home', 'url' => ['/site/index']],
             ['label' => 'FormField', 'url' => ['/formfield/index']],
             ['label' => 'Validators', 'url' => ['/validators/index']],
-            ['label' => 'Books', 'url' => ['/books/index']],
+            ['label' => 'Generate Code', 'url' => ['/laymengenerator/default/index']],
             Yii::$app->user->isGuest ? (
                 ['label' => 'Login', 'url' => ['/site/login']]
             ) : (

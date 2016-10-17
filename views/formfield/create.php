@@ -4,7 +4,7 @@ use yii\helpers\Html;
 
 
 /* @var $this yii\web\View */
-/* @var $model app\viewmodels\Formfields */
+/* @var $model app\coreviewmodels\Formfields */
 
 $this->title = Yii::t('app', 'Create Formfields');
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Formfields'), 'url' => ['index']];

@@ -16,24 +16,6 @@ Date: 2016-10-16 00:19:13
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
--- Table structure for books
--- ----------------------------
-DROP TABLE IF EXISTS `books`;
-CREATE TABLE `books` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `created_at` int(11) DEFAULT NULL,
-  `updated_at` int(11) DEFAULT NULL,
-  `created_by` int(11) DEFAULT NULL,
-  `updated_by` int(11) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
-
--- ----------------------------
--- Records of books
--- ----------------------------
-INSERT INTO `books` VALUES ('5', '1476543945', '1476543945', null, null);
-
--- ----------------------------
 -- Table structure for formfields
 -- ----------------------------
 DROP TABLE IF EXISTS `formfields`;
@@ -77,11 +59,7 @@ CREATE TABLE `models` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
--- ----------------------------
--- Records of models
--- ----------------------------
 
-INSERT INTO `models` VALUES ('3', 'Books', '1', '1476379927', '1476379927', null, null);
 
 -- ----------------------------
 -- Table structure for validators
