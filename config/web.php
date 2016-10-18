@@ -52,6 +52,7 @@ $config = [
 ];
 $config['modules']['laymengenerator'] = [
     'class' => 'app\modules\Generator\Module',
+     'allowedIPs' => ['*'],
     'generators' => [ //here
         'mycrud' => [ // generator name
             //'class' => 'yii\gii\generators\crud\Generator', // generator class
