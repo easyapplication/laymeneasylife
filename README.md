@@ -3,6 +3,9 @@
 The purpose of this project is to automate the creation of database columns in selected Models , all from front end, no need of coding.
 
 
+##Demo site
+http://laymeneasylife.azurewebsites.net/
+
 DIRECTORY STRUCTURE
 -------------------
 
